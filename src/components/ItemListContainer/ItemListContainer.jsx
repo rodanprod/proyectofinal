@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Item from '../Item/Item'; // Importamos el componente Item
+import Item from '../Item/Item'; 
 import './ItemListContainer.css';
 import rtx3080 from '../../assets/img/png/products/rtx3080.png';
 import hyperion from '../../assets/img/png/products/hyper.png';
 import zephyrus from '../../assets/img/png/products/zephyrus.png';
 
-// Definimos productosMock fuera del componente
+
 const productosMock = [
     {
         id: 1,
@@ -48,7 +48,7 @@ const ItemListContainer = ({ saludo }) => {
         } else {
             setProductos(productosMock);
         }
-    }, [categoryId]); // Solo dependemos de categoryId
+    }, [categoryId]); 
 
     return (
         <div className="item-list-container">

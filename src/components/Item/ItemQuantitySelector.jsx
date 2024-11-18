@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ItemQuantitySelector.css"; // Asegúrate de tener este archivo
+import "./ItemQuantitySelector.css"; 
 
 const ItemQuantitySelector = ({ stock, onQuantityChange }) => {
     const [quantity, setQuantity] = useState(1);

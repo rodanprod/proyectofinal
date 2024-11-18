@@ -1,17 +1,17 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import ItemQuantitySelector from "../Item/ItemQuantitySelector";
-import { CartContext } from "../../context/CartContext"; // Importamos el contexto
+import { CartContext } from "../../context/CartContext"; 
 import "./ItemDetailContainer.css";
 
 const ItemDetailContainer = () => {
-    const { itemId } = useParams(); // Obtén el parámetro itemId desde la URL
+    const { itemId } = useParams(); 
     const [item, setItem] = useState(null);
-    const [quantity, setQuantity] = useState(1); // Estado para la cantidad seleccionada
-    const { addToCart } = useContext(CartContext); // Accedemos a la función para agregar al carrito
+    const [quantity, setQuantity] = useState(1); 
+    const { addToCart } = useContext(CartContext); 
 
     useEffect(() => {
-        // Simulación de una petición para obtener los detalles del producto
+        
         const productosMock = [
             {
                 id: "1",
@@ -44,12 +44,12 @@ const ItemDetailContainer = () => {
     }, [itemId]);
 
     const handleQuantityChange = (newQuantity) => {
-        setQuantity(newQuantity); // Actualiza la cantidad seleccionada
+        setQuantity(newQuantity); 
     };
 
     const handleAddToCart = () => {
         if (item && quantity > 0) {
-            addToCart(item, quantity); // Agrega al carrito con la cantidad seleccionada
+            addToCart(item, quantity); 
             alert(`Se agregó ${quantity} unidad(es) de "${item.nombre}" al carrito.`);
         }
     };

@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { useNavigate } from 'react-router-dom'; // Para redirigir al usuario
+import { useNavigate } from 'react-router-dom'; 
 import './Checkout.css';
 
 const Checkout = () => {
     const { cartItems, clearCart, getTotalPrice, getTotalItems } = useContext(CartContext);
-    const navigate = useNavigate(); // Hook para redirección
+    const navigate = useNavigate(); 
 
     const handleConfirmPurchase = () => {
         if (cartItems.length > 0) {
             alert(`¡Gracias por tu compra! El total a pagar es: $${getTotalPrice()}`);
-            clearCart(); // Vaciamos el carrito
-            navigate('/'); // Redirigimos al usuario a la página principal
+            clearCart(); 
+            navigate('/'); 
         } else {
             alert('El carrito está vacío. Por favor, añade productos antes de confirmar.');
         }

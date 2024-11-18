@@ -1,36 +1,36 @@
-/* Global styles */
+
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Aseguramos que ocupen todo el alto */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
-  background-color: #918592 !important; /* Fondo gris claro */
+  background-color: #918592 !important; 
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Ocupa todo el espacio disponible */
+  min-height: 100%; 
 }
 
 .App {
-  flex: 1; /* Aseguramos que el contenido ocupe el espacio restante */
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
-/* General container for the products */
+
 .product-grid {
-  flex: 1; /* Permitir que este contenedor ocupe el espacio necesario */
+  flex: 1; 
   display: flex;
   justify-content: center;
-  align-items: start; /* Alinear al inicio del contenedor */
+  align-items: start; 
   padding: 20px;
 }
 
-/* NavBar adjustments */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -38,18 +38,18 @@ body, html {
   padding: 10px 20px;
   background-color: #1c1c1c;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Para mantenerlo fijo en la parte superior */
+  position: sticky; 
   top: 0;
   z-index: 10;
 }
 
-/* Footer ajustes */
+
 .footer {
-  background-color: #1c1c1c; /* Fondo oscuro */
+  background-color: #1c1c1c; 
   color: #fff;
   padding: 20px 0;
   text-align: center;
   width: 100%;
-  margin-top: auto; /* Empuja el footer al final */
-  flex-shrink: 0; /* Evita que el footer colapse en altura */
+  margin-top: auto; 
+  flex-shrink: 0; 
 }

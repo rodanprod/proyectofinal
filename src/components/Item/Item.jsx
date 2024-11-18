@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Item.css';
-import { CartContext } from '../../context/CartContext'; // Importamos el contexto
+import { CartContext } from '../../context/CartContext'; 
 
 const Item = ({ producto }) => {
-    const { addToCart } = useContext(CartContext); // Accedemos a la función para agregar al carrito
+    const { addToCart } = useContext(CartContext); 
 
     return (
         <div className="item-card">
@@ -17,7 +17,7 @@ const Item = ({ producto }) => {
                 </Link>
                 <button
                     className="add-to-cart"
-                    onClick={() => addToCart(producto)} // Agregamos al carrito
+                    onClick={() => addToCart(producto)} 
                 >
                     Agregar al carrito
                 </button>

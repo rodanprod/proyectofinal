@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../../context/CartContext'; // Importamos el contexto
-import { Link } from 'react-router-dom'; // Para redirigir al carrito
-import iconCart from '../../assets/img/png/cart.png'; // Tu ícono de carrito
-import '../CartWidget/CartWidget.css'; // Opcional: estilos para CartWidget
+import { CartContext } from '../../context/CartContext'; 
+import { Link } from 'react-router-dom'; 
+import iconCart from '../../assets/img/png/cart.png'; 
+import '../CartWidget/CartWidget.css'; 
 
 const CartWidget = () => {
-    const { getTotalItems } = useContext(CartContext); // Obtenemos el total de productos del carrito
+    const { getTotalItems } = useContext(CartContext); 
 
     return (
         <div className="cart-widget">

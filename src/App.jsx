@@ -4,8 +4,8 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Checkout from './components/Checkout/Checkout';
-import Footer from './components/Footer/Footer'; // Importa el Footer
-import { CartProvider } from './context/CartContext'; // Importamos el CartProvider
+import Footer from './components/Footer/Footer'; 
+import { CartProvider } from './context/CartContext'; 
 
 function App() {
   return (
