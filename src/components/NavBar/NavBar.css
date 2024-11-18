@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #1c1c1c; /* Un color oscuro elegante */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 90px; /* Aumenta el tamaño del logo */
+    margin-right: 15px;
+    margin-top:35px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Espacio entre las secciones */
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+.cart-widget {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-icon {
+    width: 40px;
+    height: auto;
+}
