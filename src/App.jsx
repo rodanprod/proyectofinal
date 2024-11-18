@@ -9,7 +9,7 @@ import { CartProvider } from './context/CartContext'; // Importamos el CartProvi
 
 function App() {
   return (
-    <Router>
+    <Router basename="/proyectofinal">
       <div className="App">
         <NavBar />
         <div className="content">
